@@ -63,7 +63,7 @@ export function Catalog() {
       <div className="row">
         {catalog.length
           ? catalog.map((el) => {
-              const { title, price, images } = el;
+              const { title, price, images, id } = el;
               return <Card key={el.id} {...el} />;
             })
           : null}

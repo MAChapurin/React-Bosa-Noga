@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export function Card({title, price, images}) {
+export function Card({title, price, images, id}) {
     return (
         <div className="col-4">
         <div className="card">
@@ -9,7 +9,7 @@ export function Card({title, price, images}) {
           <div className="card-body">
             <p className="card-text">{title}</p>
             <p className="card-text">{price} руб.</p>
-            <Link to="/" className="btn btn-outline-primary">Заказать</Link>
+            <Link to={`/catalog/${id}`} className="btn btn-outline-primary">Заказать</Link>
           </div>
         </div>
       </div>

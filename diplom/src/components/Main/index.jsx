@@ -1,5 +1,6 @@
 import { Route, Router, Routes } from "react-router-dom";
 import { About } from "../About";
+import { CardPage } from "../CardPage";
 import { Catalog } from "../Catalog";
 import { Contacts } from "../Contacts";
 import { Page404 } from "../Page404";
@@ -32,6 +33,7 @@ export function Main() {
             <Route path="/catalog" element={<Catalog />} />
             <Route path="/about" element={<About />} />
             <Route path="/contacts" element={<Contacts />} />
+            <Route path="/catalog/:id" element={<CardPage />} />
             <Route path="*" element={<Page404 />} />
           </Routes>
         </div>
